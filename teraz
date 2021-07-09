@@ -1,0 +1,32 @@
+def setup():
+    size(480, 320) 
+
+def draw():
+
+    rect(50,50,100,100)
+    fill(255, 0, 0)
+
+
+    textSize(32)
+    text('a d', 100, 100)
+    a = fill(255, 255, 0)
+
+
+    if ((mouseX >= 100 and mouseX <= 150)and(mouseY <= 100 and mouseY >= 70)):
+        if mousePressed:
+            text('a d', 100, 100)
+            a = fill(0, 0, 0)
+
+    if keyPressed:
+        if key == 'a' or key == 'A':
+            text('a d', 100, 100)
+            a = fill(115, 54, 0)
+        if key == 'd' or key == 'D':
+            text('a d', 100, 100)
+            a = fill(0, 5, 111)
+
+
+
+
+
+    #Press 'a' ro 'd' for see program working
